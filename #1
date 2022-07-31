@@ -1,0 +1,33 @@
+The field is a class-level variable that holds a value. Generally, field members should have a private access modifier and used with property.
+
+A class can have parameterized or parameterless constructors. The constructor will be called when you create an instance of a class.
+Constructors can be defined by using an access modifier and class name: <access modifiers> <class name>(){ }
+
+A method can be defined using the following template:
+{access modifier} {return type} MethodName({parameterType parameterName})
+
+A property can be defined using getters and setters, as shown below:
+Property encapsulates a private field. It provides getters (get{}) to retrieve the value of the underlying field and setters (set{}) to set the value of the underlying field.
+In the above example, _myPropertyVar is a private field that cannot be accessed directly.
+It will only be accessed via MyProperty. Thus, MyProperty encapsulates _myPropertyVar.
+
+Notice that there is no private backing field in the above property example. The backing field will be created automatically by the compiler.
+You can work with an automated property as you would with a normal property of the class.
+Automated-implemented property is just for easy declaration of the property when no additional logic is required in the property accessors.
+
+The namespace is a container for a set of related classes and namespaces. The namespace is also used to give unique names to classes within the namespace name. 
+Namespace and classes are represented using a dot (.).
+
+In C#, namespace can be defined using the namespace keyword.
+namespace CSharpTutorials
+{
+    class MyClass
+    {
+
+    }
+}
+In the above example, the fully qualified class name of MyClass is CSharpTutorials.MyClass.
+
+
+
+
