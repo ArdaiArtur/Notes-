@@ -1,0 +1,30 @@
+You cannot apply access modifiers to interface members. All the members are public by default. If you use an access modifier in an interface, then the C# compiler will 
+give a compile-time error "The modifier 'public/private/protected' is not valid for this item.".(Visual Studio will show an error immediately without compilation.)
+
+An interface can only contain declarations but not implementations.
+
+A class or a Struct can implement one or more interfaces using colon (:).
+
+Syntax: <Class or Struct Name> : <Interface Name>
+
+Interface members must be implemented with the public modifier; otherwise, the compiler will give compile-time errors.
+
+An interface can be implemented explicitly using <InterfaceName>.<MemberName>. 
+Explicit implementation is useful when class is implementing multiple interfaces; thereby, it is more readable and eliminates the confusion.
+It is also useful if interfaces have the same method name coincidently.
+Do not use public modifier with an explicit implementation. It will give a compile-time error
+
+When you implement an interface explicitly, you can access interface members only through the instance of an interface type.
+
+A class or struct can implement multiple interfaces. It must provide the implementation of all the members of all interfaces.
+
+
+Interface can contain declarations of method, properties, indexers, and events.
+Interface cannot include private, protected, or internal members. All the members are public by default.
+Interface cannot contain fields, and auto-implemented properties.
+A class or a struct can implement one or more interfaces implicitly or explicitly. Use public modifier when implementing interface implicitly, whereas don't use it in case of explicit implementation.
+Implement interface explicitly using InterfaceName.MemberName.
+An interface can inherit one or more interfaces.
+
+
+
