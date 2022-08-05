@@ -1,0 +1,22 @@
+C# includes a decision-making operator ?: which is called the conditional operator or ternary operator. It is the short form of the if else conditions.
+
+The ternary operator starts with a boolean condition.
+If this condition evaluates to true then it will execute the first statement after ?, otherwise the second statement after : will be executed.
+int x = 10, y = 100;
+
+if (x > y)
+    Console.WriteLine("x is greater than y");
+else
+    Console.WriteLine("x is less than y");
+    
+
+Nested ternary operators are possible by including a conditional expression as a second statement.
+ 
+ 
+ int x = 10, y = 100;
+
+string result = x > y ? "x is greater than y" : 
+                    x < y ? "x is less than y" : 
+                        x == y ? "x is equal to y" : "No result";
+
+Console.WriteLine(result);   
