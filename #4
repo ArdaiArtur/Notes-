@@ -1,0 +1,48 @@
+The switch statement can be used instead of if else statement when you want to test a variable against three or more conditions. 
+Here, you will learn about the switch statement and how to use it efficiently in the C# program.
+
+The switch statement starts with the switch keyword that contains a match expression or a variable in the bracket switch(match expression).
+The result of this match expression or a variable will be tested against conditions specified as cases, inside the curly braces { }. 
+A case must be specified with the unique constant value and ends with the colon :. Each case includes one or more statements to be executed.
+The case will be executed if a constant value and the value of a match expression/variable are equal. The switch statement can also contain an optional default label.
+The default label will be executed if no cases executed. The break, return, or goto keyword is used to exit the program control from a switch case.
+
+int x = 10;
+
+switch (x)
+{ 
+    case 5:
+        Console.WriteLine("Value of x is 5");
+        break;
+    case 10:
+        Console.WriteLine("Value of x is 10");
+        break;
+    case 15:
+        Console.WriteLine("Value of x is 15");
+        break;
+    default:
+        Console.WriteLine("Unknown value");
+        break;
+}
+
+
+static void Main(string[] args)
+{
+    int x = 125;
+    Console.Write( isOdd(x)? "Even value" : "Odd value");
+}
+
+static bool isOdd(int i, int j)
+{
+    switch (x % 2)
+    { 
+        case 0:
+            return true;
+        case 1:
+            return false;
+        default:
+            return false;
+    }
+    
+    return false;
+}
