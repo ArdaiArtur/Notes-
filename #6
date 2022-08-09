@@ -1,0 +1,32 @@
+The Tuple<T> class was introduced in .NET Framework 4.0. A tuple is a data structure that contains a sequence of elements of different data types.
+It can be used where you want to have a data structure to hold an object with properties, but you don't want to create a separate type for it.
+
+Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>
+
+The following example creates a tuple with three elements:
+
+Tuple<int, string, string> person = 
+            new Tuple <int, string, string>(1, "Steve", "Jobs");
+In the above example, we created an instance of the Tuple that holds a person's record. We specified a type for each element and passed values to the constructor.
+Specifying the type of each element is cumbersome. C# includes a static helper class Tuple,
+which returns an instance of the Tuple<T> without specifying each element's type, as shown below.
+
+var person = Tuple.Create(1, "Steve", "Jobs");
+A tuple can only include a maximum of eight elements. It gives a compiler error when you try to include more than eight elements.
+
+var numbers = Tuple.Create(1, 2, 3, 4, 5, 6, 7, 8);
+
+Tuples can be used in the following scenarios:
+
+When you want to return multiple values from a method without using ref or out parameters.
+When you want to pass multiple values to a method through a single parameter.
+When you want to hold a database record or some values temporarily without creating a separate class.
+
+C# 7 includes ValueTuple to overcome Tuple's limitations and makes it even easier to work with Tuple. 
+
+
+
+
+
+
+
