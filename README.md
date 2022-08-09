@@ -6,3 +6,5 @@
 #3 Ternary Operator ?:
 
 #4Switch Statement
+
+#Generics 
