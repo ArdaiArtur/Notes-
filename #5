@@ -1,0 +1,28 @@
+Generic means the general form, not specific. In C#, generic means not specific to a particular data type.
+
+C# allows you to define generic classes, interfaces, abstract classes, fields, methods, static methods, properties, events, delegates,
+and operators using the type parameter and without the specific data type. 
+A type parameter is a placeholder for a particular type specified when creating an instance of the generic type.
+
+A generic type is declared by specifying a type parameter in an angle brackets after a type name, e.g. TypeName<T> where T is a type parameter.
+
+It is not required to use T as a type parameter. You can give any name to a type parameter. Generally, T is used when there is only one type parameter.
+It is recommended to use a more readable type parameter name as per requirement like TSession, TKey, TValue etc.
+
+ou can create an instance of generic classes by specifying an actual type in angle brackets. The following creates an instance of the generic class DataStore.
+
+DataStore<string> store = new DataStore<string>();
+Above, we specified the string type in the angle brackets while creating an instance. 
+So, T will be replaced with a string type wherever T is used in the entire class at compile-time. Therefore, the type of Data property would be a string.
+
+A generic class increases the reusability. The more type parameters mean more reusable it becomes. However, too much generalization makes code difficult to understand and maintain.
+A generic class can be a base class to other generic or non-generic classes or abstract classes.
+A generic class can be derived from other generic or non-generic interfaces, classes, or abstract classe
+
+A method declared with the type parameters for its return type or parameters is called a generic method.
+A non-generic class can include generic methods by specifying a type parameter in angle brackets with the method name, as shown below.
+
+
+Generics increase the reusability of the code. You don't need to write code to handle different data types.
+Generics are type-safe. You get compile-time errors if you try to use a different data type than the one specified in the definition.
+Generic has a performance advantage because it removes the possibilities of boxing and unboxing.
