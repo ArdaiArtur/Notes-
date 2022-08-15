@@ -10,3 +10,5 @@
 #5Generics 
 
 #6Tuplet
+
+#7Delegates
