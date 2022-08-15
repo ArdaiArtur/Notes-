@@ -1,1 +1,25 @@
+C# includes built-in generic delegate types Func and Action, so that you don't need to define custom delegates manually in most cases.
 
+Func is a generic delegate included in the System namespace. It has zero or more input parameters and one out parameter. 
+The last parameter is considered as an out parameter.
+
+The Func delegate that takes one input parameter and one out parameter is defined in the System namespace, as shown below:
+
+Signature: Func
+namespace System
+{    
+    public delegate TResult Func<in T, out TResult>(T arg);
+}
+
+
+The last parameter in the angle brackets <> is considered the return type,
+and the remaining parameters are considered input parameter types, as shown in the following figure.
+
+You can assign any method to the above func delegate that takes two int parameters and returns an int value.
+
+
+Action is a delegate type defined in the System namespace. An Action type delegate is the same as Func delegate except that the Action delegate doesn't return a value.
+In other words, an Action delegate can be used with a method that has a void return type.
+
+As the name suggests, an anonymous method is a method without a name. 
+Anonymous methods in C# can be defined using the delegate keyword and can be assigned to a variable of delegate type.
